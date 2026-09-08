@@ -17,9 +17,11 @@ export default function App() {
 			<h1>This is card component.</h1>
 			{/* <Card name="Akij" age={39} />
 			<Card name="Badol" age={17} /> */}
-			{members.map((member) => (
-				<Card name={member.name} age={member.age} />
-			))}
+			{members
+				.sort((a, b) => a.age - b.age)
+				.map((member) => (
+					<Card name={member.name} age={member.age} />
+				))}
 		</>
 	);
 }
