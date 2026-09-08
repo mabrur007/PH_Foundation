@@ -1,0 +1,12 @@
+.card {
+	padding: 20px;
+	margin: 6px;
+	border-radius: 12px;
+}
+.bg-green {
+	background: greenyellow;
+}
+
+.bg-red {
+	background: crimson;
+}
