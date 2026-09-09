@@ -1,12 +1,13 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-export default function Counter() {
-	let [count, setCount] = useState(0);
+export default function Counter({ count, setCount }) {
+	// let [count, setCount] = useState(0);
 	// increment
 	const increment = () => {
 		setCount(++count);
 		console.log(count);
 	};
+	// decrement
 	const decrement = () => {
 		if (count > 0) {
 			setCount(--count);
